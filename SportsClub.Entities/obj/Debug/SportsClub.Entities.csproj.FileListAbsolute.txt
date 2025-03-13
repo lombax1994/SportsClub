@@ -1,0 +1,6 @@
+D:\gegevensbeheer2425s2\lesmap\L8\SportsClub\SportsClub.Entities\bin\Debug\SportsClub.Entities.dll
+D:\gegevensbeheer2425s2\lesmap\L8\SportsClub\SportsClub.Entities\bin\Debug\SportsClub.Entities.pdb
+D:\gegevensbeheer2425s2\lesmap\L8\SportsClub\SportsClub.Entities\obj\Debug\SportsClub.Entities.csproj.AssemblyReference.cache
+D:\gegevensbeheer2425s2\lesmap\L8\SportsClub\SportsClub.Entities\obj\Debug\SportsClub.Entities.csproj.CoreCompileInputs.cache
+D:\gegevensbeheer2425s2\lesmap\L8\SportsClub\SportsClub.Entities\obj\Debug\SportsClub.Entities.dll
+D:\gegevensbeheer2425s2\lesmap\L8\SportsClub\SportsClub.Entities\obj\Debug\SportsClub.Entities.pdb

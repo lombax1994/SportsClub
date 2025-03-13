@@ -1,0 +1,1 @@
+Zie volgende pagina voor instructies als de gedownloade versie niet goed werkt: https://creo.instructure.com/courses/7382/pages/wat-te-doen-wanneer-je-een-sportsclub-versie-van-github-downloadt?module_item_id=396197 
