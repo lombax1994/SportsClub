@@ -1,0 +1,14 @@
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Bll\obj\Debug\SportsClub.Bll.csproj.AssemblyReference.cache
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Bll\obj\Debug\SportsClub.Bll.csproj.CoreCompileInputs.cache
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Bll\bin\Debug\SportsClub.Bll.dll
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Bll\bin\Debug\SportsClub.Bll.pdb
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Bll\bin\Debug\SportsClub.Dal.dll
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Bll\bin\Debug\SportsClub.Entities.dll
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Bll\bin\Debug\EntityFramework.dll
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Bll\bin\Debug\SportsClub.Dal.pdb
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Bll\bin\Debug\SportsClub.Dal.dll.config
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Bll\bin\Debug\SportsClub.Entities.pdb
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Bll\bin\Debug\EntityFramework.xml
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Bll\obj\Debug\SportsCl.316779D9.Up2Date
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Bll\obj\Debug\SportsClub.Bll.dll
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Bll\obj\Debug\SportsClub.Bll.pdb

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using SportsClub.Bll;
 
 namespace SportsClub.WebApp.Controllers
 {
@@ -12,9 +13,20 @@ namespace SportsClub.WebApp.Controllers
         // GET: Members
         public ActionResult Index()
         {
-            //lijst met members uit databank opvragen
-            //opslaan in list en dan doorgeven aan view
-            return View();
+
+            try
+            {
+                List<Member> lstMembers = new MemberBll().ReadAll();
+                //lijst met members uit databank opvragen
+                //opslaan in list en dan doorgeven aan view
+                return View(lstMembers);
+            }
+            catch (Exception ex)
+            {
+                //foutboodschap tonen
+                ViewBag.Foutboodschap = ex.Message;
+                return View("Error");
+            }
         }
     }
 }
