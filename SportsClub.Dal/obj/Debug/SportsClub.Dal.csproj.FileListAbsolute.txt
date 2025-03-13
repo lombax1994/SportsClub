@@ -31,3 +31,4 @@ C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer
 C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\obj\Debug\SportsClub.Dal.pdb
 C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\obj\Debug\SportsClub.Dal.Migrations.CreateDb.resources
 C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\obj\Debug\SportsClub.Dal.csproj.GenerateResource.cache
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\obj\Debug\SportsClub.Dal.Migrations.AddRelations.resources

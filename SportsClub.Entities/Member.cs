@@ -14,12 +14,17 @@ namespace SportsClub.Entities
         public int MemberId { get; set; } // Guid
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        //een member kan deelnemen aan meerdere activiteiten
+        //dus voorzien we een List<Activity> property
+        public List<Activity> Activities { get; set; }
 
         // constructor zonder MemberId --> deze zal automatisch ingevuld worden
         public Member(string firstName, string lastName)
         {
             FirstName = firstName;
             LastName = lastName;
+            //lege lijst van activiteiten genereren
+            Activities = new List<Activity>();
         }
 
         // lege constructor, dit is vereist voor de Seed() methode

@@ -14,10 +14,13 @@ namespace SportsClub.Entities
         public string Activityname { get; set; }
         public int MaxParticipants { get; set; } // aantal ingeschrevenen voor een activiteit
 
+        public List<Member> Members { get; set; }
+
         public Activity(string activityName, int maxParticipants)
         {
             Activityname = activityName;
             MaxParticipants = maxParticipants;
+            Members = new List<Member>();
         }
 
         // lege constructor voor de Seed() methode

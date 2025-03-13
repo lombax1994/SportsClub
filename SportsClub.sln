@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsClub.Entities", "Spor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsClub.Dal", "SportsClub.Dal\SportsClub.Dal.csproj", "{54DE0AAC-0A9C-4E36-A05C-DC6A29A473FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsClub.Bll", "SportsClub.Bll\SportsClub.Bll.csproj", "{1E4380BF-4BFB-474F-AD65-54D8BEB88E15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{54DE0AAC-0A9C-4E36-A05C-DC6A29A473FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54DE0AAC-0A9C-4E36-A05C-DC6A29A473FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54DE0AAC-0A9C-4E36-A05C-DC6A29A473FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E4380BF-4BFB-474F-AD65-54D8BEB88E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E4380BF-4BFB-474F-AD65-54D8BEB88E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E4380BF-4BFB-474F-AD65-54D8BEB88E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E4380BF-4BFB-474F-AD65-54D8BEB88E15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
