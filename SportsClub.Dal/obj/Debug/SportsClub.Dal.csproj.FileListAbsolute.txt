@@ -15,3 +15,19 @@ D:\gegevensbeheer2425s2\lesmap\L8\SportsClub\SportsClub.Dal\obj\Debug\SportsClub
 D:\gegevensbeheer2425s2\lesmap\L8\SportsClub\SportsClub.Dal\obj\Debug\SportsClub.Dal.Migrations.CreateDb.resources
 D:\gegevensbeheer2425s2\lesmap\L8\SportsClub\SportsClub.Dal\obj\Debug\SportsClub.Dal.csproj.GenerateResource.cache
 D:\gegevensbeheer2425s2\lesmap\L8\SportsClub\SportsClub.Dal\obj\Debug\SportsClub.Dal.Migrations.AddActivitiesTable.resources
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\bin\Debug\SportsClub.Dal.dll.config
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\bin\Debug\SportsClub.Dal.dll
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\bin\Debug\SportsClub.Dal.pdb
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\bin\Debug\EntityFramework.dll
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\bin\Debug\SportsClub.Entities.dll
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\bin\Debug\SportsClub.Entities.pdb
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\bin\Debug\EntityFramework.xml
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\obj\Debug\SportsClub.Dal.csproj.AssemblyReference.cache
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\obj\Debug\SportsClub.Dal.csproj.CoreCompileInputs.cache
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\obj\Debug\SportsCl.F01DA8F4.Up2Date
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\obj\Debug\SportsClub.Dal.dll
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\obj\Debug\SportsClub.Dal.pdb
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\obj\Debug\SportsClub.Dal.Migrations.CreateDb.resources
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Dal\obj\Debug\SportsClub.Dal.csproj.GenerateResource.cache

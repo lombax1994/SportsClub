@@ -8,6 +8,16 @@
         public override void Up()
         {
             CreateTable(
+                "dbo.Activities",
+                c => new
+                    {
+                        ActivityId = c.Int(nullable: false, identity: true),
+                        Activityname = c.String(),
+                        MaxParticipants = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.ActivityId);
+            
+            CreateTable(
                 "dbo.Members",
                 c => new
                     {
@@ -22,6 +32,7 @@
         public override void Down()
         {
             DropTable("dbo.Members");
+            DropTable("dbo.Activities");
         }
     }
 }

@@ -17,7 +17,7 @@ namespace SportsClub.Dal
 
         // in de constructor leggen we de link naar onze database server
         // en de specifieke databank die we willen bereiken
-        public SportsClubDbContext() : base(@"Data Source=.\sqlexpress;Initial Catalog=SportsClubDb;Integrated Security=True")
+        public SportsClubDbContext() : base(@"Data Source=.\sqlexpress;Initial Catalog=SportsClubDb;User Id=creo;Password=creo")
         {
             
         }

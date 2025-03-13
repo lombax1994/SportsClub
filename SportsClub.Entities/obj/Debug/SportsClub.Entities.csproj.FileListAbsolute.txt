@@ -4,3 +4,9 @@ D:\gegevensbeheer2425s2\lesmap\L8\SportsClub\SportsClub.Entities\obj\Debug\Sport
 D:\gegevensbeheer2425s2\lesmap\L8\SportsClub\SportsClub.Entities\obj\Debug\SportsClub.Entities.csproj.CoreCompileInputs.cache
 D:\gegevensbeheer2425s2\lesmap\L8\SportsClub\SportsClub.Entities\obj\Debug\SportsClub.Entities.dll
 D:\gegevensbeheer2425s2\lesmap\L8\SportsClub\SportsClub.Entities\obj\Debug\SportsClub.Entities.pdb
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Entities\bin\Debug\SportsClub.Entities.dll
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Entities\bin\Debug\SportsClub.Entities.pdb
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Entities\obj\Debug\SportsClub.Entities.csproj.AssemblyReference.cache
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Entities\obj\Debug\SportsClub.Entities.csproj.CoreCompileInputs.cache
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Entities\obj\Debug\SportsClub.Entities.dll
+C:\Users\LouisDemuynck\Desktop\Gegevensbeheer en beveiliging\L7+8\gegevensbeheer-sportsclub2425S2-main\SportsClub.Entities\obj\Debug\SportsClub.Entities.pdb

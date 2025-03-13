@@ -13,7 +13,7 @@ namespace SportsClub.Dal.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202502280925546_CreateDb"; }
+            get { return "202503130924008_CreateDb"; }
         }
         
         string IMigrationMetadata.Source
