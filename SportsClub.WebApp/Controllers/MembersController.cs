@@ -12,13 +12,9 @@ namespace SportsClub.WebApp.Controllers
         // GET: Members
         public ActionResult Index()
         {
-            // test lijst met members aanmaken
-            List<Member> lstMembers = new List<Member>();
-            // test members toevoegen aan list
-            lstMembers.Add(new Member("Louis", "Demuynck"));
-            lstMembers.Add(new Member("Zakaria", "Atari"));
-            // list doorgeven aan view
-            return View(lstMembers);
+            //lijst met members uit databank opvragen
+            //opslaan in list en dan doorgeven aan view
+            return View();
         }
     }
 }

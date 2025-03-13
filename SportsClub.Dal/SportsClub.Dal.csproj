@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MemberDal.cs" />
     <Compile Include="Migrations\202503130924008_CreateDb.cs" />
     <Compile Include="Migrations\202503130924008_CreateDb.Designer.cs">
       <DependentUpon>202503130924008_CreateDb.cs</DependentUpon>
