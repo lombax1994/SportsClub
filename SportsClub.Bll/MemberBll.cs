@@ -5,14 +5,14 @@ using SportsClub.Entities;
 
 namespace SportsClub.Bll
 {
-    public class MemberBll
+    public static class MemberBll
     {
         //CRUD 
 
         //Read All
-        public List<Member> ReadAll()
+        public static List<Member> ReadAll()
         {
-            List<Member> lstMembers = new MemberDal().ReadAll();
+            List<Member> lstMembers = MemberDal.ReadAll();
 
             //controleren of we effectief een correcte lijst krijgen
             //en of deze lijst niet leeg is

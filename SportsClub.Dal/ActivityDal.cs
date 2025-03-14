@@ -1,18 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using SportsClub.Entities;
+using System.Collections.Generic;
 using System.Linq;
-using SportsClub.Entities;
 
 namespace SportsClub.Dal
 {
-
-    //moet public zijn want dezem oet bereikbaar zijn in Bll
-    public static class MemberDal
+    public static class ActivityDal
     {
-        //CRUD operaties
-        //Create, Read, Update, Delete
-
-        //Read All
-        public static List<Member> ReadAll()
+        public static List<Activity> ReadAll()
         {
 
             // using --> wanneer dit blokje code klaar is,
@@ -21,9 +15,9 @@ namespace SportsClub.Dal
             using (var db = new SportsClubDbContext())
             {
                 //lijst van members uit databank opvragen
-                List<Member> lstMembers = db.Members.ToList();
+                List<Activity> lstActivities = db.Activities.ToList();
                 //lijst met members teruggeven
-                return lstMembers;
+                return lstActivities;
             }
         }
     }

@@ -1,25 +1,24 @@
-﻿using SportsClub.Entities;
+﻿using SportsClub.Bll;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using SportsClub.Bll;
+using SportsClub.Entities;
 
 namespace SportsClub.WebApp.Controllers
 {
-    public class MembersController : Controller
+    public class ActivityController : Controller
     {
-        // GET: Members
+        // GET: Activity
         public ActionResult Index()
         {
-
             try
             {
-                List<Member> lstMembers = MemberBll.ReadAll();
+                List<Activity> lstActivities = ActivityBll.ReadAll();
                 //lijst met members uit databank opvragen
                 //opslaan in list en dan doorgeven aan view
-                return View(lstMembers);
+                return View(lstActivities);
             }
             catch (Exception ex)
             {
@@ -30,3 +29,4 @@ namespace SportsClub.WebApp.Controllers
         }
     }
 }
+
