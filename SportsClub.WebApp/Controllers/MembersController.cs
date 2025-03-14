@@ -24,7 +24,7 @@ namespace SportsClub.WebApp.Controllers
             catch (Exception ex)
             {
                 //foutboodschap tonen
-                ViewBag.Foutboodschap = ex.Message;
+                ViewBag.ErrorMessage = ex.Message;
                 return View("Error");
             }
         }
