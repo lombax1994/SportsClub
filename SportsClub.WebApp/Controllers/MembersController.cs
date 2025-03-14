@@ -28,5 +28,18 @@ namespace SportsClub.WebApp.Controllers
                 return View("Error");
             }
         }
+
+        public ActionResult Details(int id) {
+            try
+            {
+                Member m = MemberBll.ReadOne(id);
+                return View(m);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+                return View("Error");
+            }
+        }
     }
 }

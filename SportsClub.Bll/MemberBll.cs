@@ -23,5 +23,17 @@ namespace SportsClub.Bll
 
             return lstMembers;
         }
+
+        public static Member ReadOne(int id)
+        {
+            Member member = MemberDal.ReadOne(id);
+
+            if (member == null)
+            {
+                throw new Exception("Member not found");
+            }
+
+            return member;
+        }
     }
 }

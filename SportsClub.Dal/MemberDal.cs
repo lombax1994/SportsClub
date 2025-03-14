@@ -26,5 +26,17 @@ namespace SportsClub.Dal
                 return lstMembers;
             }
         }
+
+        //Read One
+        public static Member ReadOne(int id)
+        {
+            using (var db = new SportsClubDbContext())
+            {
+                //lid opvragen met id
+                Member member = db.Members.Find(id);
+                //lid teruggeven
+                return member;
+            }
+        }
     }
 }

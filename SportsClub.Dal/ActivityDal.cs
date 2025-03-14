@@ -20,5 +20,15 @@ namespace SportsClub.Dal
                 return lstActivities;
             }
         }
+        public static Activity ReadOne(int id)
+        {
+            using (var db = new SportsClubDbContext())
+            {
+                //lid opvragen met id
+                Activity activity = db.Activities.Find(id);
+                //lid teruggeven
+                return activity;
+            }
+        }
     }
 }
