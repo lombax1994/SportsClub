@@ -35,5 +35,15 @@ namespace SportsClub.Bll
 
             return member;
         }
+
+        //Create
+        //hier moeten we parameters doorgeven die overeenstemmen met de properties
+        //van de member class
+        public static bool Create(string firstName, string lastName)
+        {
+            Member member = new Member(firstName, lastName);
+            bool memberCreated = MemberDal.Create(member);
+            return memberCreated;
+        }
     }
 }

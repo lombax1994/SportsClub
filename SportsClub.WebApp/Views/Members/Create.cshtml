@@ -1,4 +1,5 @@
-﻿@model SportsClub.Entities.Member
+﻿@using System.Web.UI.WebControls
+@model SportsClub.Entities.Member
 
 @{
     ViewBag.Title = "Create";
@@ -6,6 +7,8 @@
 
 <h2>Create</h2>
 
+@*feedback van Create tonen*@
+<p>@ViewBag.Feedback</p>
 
 @using (Html.BeginForm()) 
 {
