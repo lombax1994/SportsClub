@@ -55,13 +55,9 @@
   <ItemGroup>
     <Compile Include="ActivityDal.cs" />
     <Compile Include="MemberDal.cs" />
-    <Compile Include="Migrations\202503130924008_CreateDb.cs" />
-    <Compile Include="Migrations\202503130924008_CreateDb.Designer.cs">
-      <DependentUpon>202503130924008_CreateDb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202503131003280_AddRelations.cs" />
-    <Compile Include="Migrations\202503131003280_AddRelations.Designer.cs">
-      <DependentUpon>202503131003280_AddRelations.cs</DependentUpon>
+    <Compile Include="Migrations\202503201038007_test.cs" />
+    <Compile Include="Migrations\202503201038007_test.Designer.cs">
+      <DependentUpon>202503201038007_test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,11 +74,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202503130924008_CreateDb.resx">
-      <DependentUpon>202503130924008_CreateDb.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202503131003280_AddRelations.resx">
-      <DependentUpon>202503131003280_AddRelations.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202503201038007_test.resx">
+      <DependentUpon>202503201038007_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

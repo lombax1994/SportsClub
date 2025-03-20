@@ -41,6 +41,27 @@ namespace SportsClub.WebApp.Controllers
                 return View("Error");
             }
         }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(string activityName, int maxParticipants)
+        {
+            bool activityCreated = ActivityBll.Create(activityName, maxParticipants);
+                if (activityCreated)
+                {
+                    ViewBag.Feedback = activityName + " created";
+                }
+                else
+                {
+                    ViewBag.Feedback = "Activity not created";
+                }
+
+                return View();
+        }
     }
 }
 

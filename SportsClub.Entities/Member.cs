@@ -12,7 +12,12 @@ namespace SportsClub.Entities
         // key property --> voor de Primary Key in de databank
         [Key]
         public int MemberId { get; set; } // Guid
+
+        [Required(ErrorMessage = "Voornaam mag niet leeg zijn")]
+        [StringLength(30, MinimumLength = 2, ErrorMessage = "Lengte voornaam tussen {2} en {1}")]
         public string FirstName { get; set; }
+
+        [Required(ErrorMessage = "Achternaam mag niet leeg zijn")]
         public string LastName { get; set; }
         //een member kan deelnemen aan meerdere activiteiten
         //dus voorzien we een List<Activity> property

@@ -41,9 +41,23 @@ namespace SportsClub.Bll
         //van de member class
         public static bool Create(string firstName, string lastName)
         {
-            Member member = new Member(firstName, lastName);
-            bool memberCreated = MemberDal.Create(member);
-            return memberCreated;
+            //trimmen van de voornaam en achternaam
+            firstName = firstName.Trim();
+            lastName = lastName.Trim();
+
+
+            //controleren of de voornaam en achternaam niet leeg zijn
+            if (!string.IsNullOrEmpty(firstName) && !string.IsNullOrEmpty(lastName))
+            {
+
+                Member member = new Member(firstName, lastName);
+                bool memberCreated = MemberDal.Create(member);
+                return memberCreated;
+            }
+
+            //indien de voornaam of achternaam leeg is, geven we false terug
+            return false;
+
         }
     }
 }

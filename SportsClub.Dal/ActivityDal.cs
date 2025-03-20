@@ -30,5 +30,27 @@ namespace SportsClub.Dal
                 return activity;
             }
         }
+
+        public static bool Create(Activity a)
+        {
+            using (var db = new SportsClubDbContext())
+            {
+                //lid toevoegen aan databank
+                try
+                {
+                    db.Activities.Add(a);
+                    //aangepaste databank opslaan
+                    int numberOfChanges = db.SaveChanges();
+                    //aantal wijzigingen teruggeven
+                    if (numberOfChanges > 0) return true;
+                    return false;
+                }
+                catch
+                {
+
+                    return false;
+                }
+            }
+        }
     }
 }

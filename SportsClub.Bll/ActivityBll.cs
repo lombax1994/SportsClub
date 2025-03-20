@@ -32,5 +32,20 @@ namespace SportsClub.Bll
 
             return activity;
         }
+
+        public static bool Create(string activityName, int maxParticipants)
+        {
+            activityName = activityName.Trim();
+
+
+
+            if (!string.IsNullOrEmpty(activityName))
+            {
+                Activity activity = new Activity(activityName, maxParticipants);
+                bool activityCreated = ActivityDal.Create(activity);
+                return activityCreated; 
+            }
+            return false;
+        }
     }
 }

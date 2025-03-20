@@ -11,7 +11,13 @@ namespace SportsClub.Entities
     {
         [Key]
         public int ActivityId { get; set; }
+
+        [Required(ErrorMessage = "Naam mag niet leeg zijn.")]
+        [StringLength(30, MinimumLength = 2, ErrorMessage = "Lengte naam tussen {2} en {1}")]
         public string Activityname { get; set; }
+
+        [Required(ErrorMessage="Aantal deelnemers mag niet leeg zijn")]
+        [Range(6, 30, ErrorMessage = "Aantal deelnemers moet tussen {1} en {2} liggen")]
         public int MaxParticipants { get; set; } // aantal ingeschrevenen voor een activiteit
 
         public List<Member> Members { get; set; }
