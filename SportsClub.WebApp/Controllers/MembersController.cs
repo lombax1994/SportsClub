@@ -74,5 +74,51 @@ namespace SportsClub.WebApp.Controllers
                 //en feedback boodschap tonen
                 return View();
         }
+
+        //Delete
+        //twee methodes nodig: de eerste maakt de link naar de view te doen werken.
+        //en eentje om de delete uit te voeren
+
+        public ActionResult Delete(int id)
+        {
+            try
+            {
+                Member m = MemberBll.ReadOne(id);
+                return View(m);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+                return View("Error");
+            }
+        }
+
+        //tweede methode om de delete uit te voeren
+        // [HttpPost] --> deze methode wordt aangesproken wanneer het formulier verstuurd wordt
+        [HttpPost]
+        //parameter id is hier een string omdat we al een methode hebben
+        //met dezelfde naam en dezelfde parameters
+        public ActionResult Delete(string id)
+        {
+            int memberId = Convert.ToInt32(id);
+            try
+            {
+                bool memberDeleted = MemberBll.Delete(memberId);
+                if (memberDeleted)
+                {
+                    TempData["Feedback"] = "Member deleted";
+                    //we moeten werken met RedirectToAction omdat we de volledige
+                    //index methode willen uitvoeren
+                    return RedirectToAction("Index");
+                }
+                return View("Error");
+                
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+                return View("Error");
+            }
+        }
     }
 }

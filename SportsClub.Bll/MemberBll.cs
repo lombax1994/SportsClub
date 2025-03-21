@@ -59,5 +59,21 @@ namespace SportsClub.Bll
             return false;
 
         }
+
+        public static bool Delete(int id)
+        {
+            try
+            {
+                Member member = MemberDal.ReadOne(id);
+
+                bool memberDeleted = MemberDal.Delete(member);
+                return memberDeleted;
+            }
+            catch
+            {
+
+                return false;
+            }
+        }
     }
 }

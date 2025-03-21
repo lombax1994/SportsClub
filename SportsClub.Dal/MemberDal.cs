@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Data.Entity;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using SportsClub.Entities;
 
@@ -63,6 +65,28 @@ namespace SportsClub.Dal
                     return false;
                 }
             }
+        }
+
+        public static bool Delete(Member m) {
+            using (var db = new SportsClubDbContext())
+            {
+                try
+                {
+                    //db.members.remove(m) --> werkt niet in deze versie van entity framework
+                    //status van member op delete zetten
+                    db.Entry(m).State = EntityState.Deleted;
+                    //aangepaste databank opslaan
+                    int numberOfChanges = db.SaveChanges();
+                    //aantal wijzigingen teruggeven
+                    if (numberOfChanges > 0) return true;
+                    return false;
+                }
+                catch
+                {
+                    return false;
+                }
+            }
+
         }
     }
 }
