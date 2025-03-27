@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using SportsClub.Entities;
@@ -88,5 +89,22 @@ namespace SportsClub.Dal
             }
 
         }
+
+        public static bool Update(Member m)
+        {
+            using (var db = new SportsClubDbContext())
+            {
+                try
+                {
+                    db.Members.AddOrUpdate(m);
+                    int numberOfChanges = db.SaveChanges();
+                    if (numberOfChanges > 0) return true;
+                    return false;
+                }
+                catch
+                {
+                    return false;
+                }
+            }
     }
 }

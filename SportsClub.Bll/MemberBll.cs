@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using SportsClub.Dal;
 using SportsClub.Entities;
 
@@ -74,6 +75,30 @@ namespace SportsClub.Bll
 
                 return false;
             }
+        }
+
+        //update
+        //we krijgen de id van de te update member binnen
+        //en de nieuwe voornaam en achternaam
+        public static bool Update(int id, string updatedFirstName, string updatedLastName){
+            Member member = MemberDal.ReadOne(id);
+
+            //eerst eventuele spaties verwijderen
+            updatedFirstName = updatedFirstName.Trim();
+            updatedLastName = updatedLastName.Trim();
+
+            //controleren of de voornaam en achternaam niet leeg zijn
+            if (!string.IsNullOrEmpty(updatedFirstName) && !string.IsNullOrEmpty(updatedLastName))
+            {
+                member.FirstName = updatedFirstName;
+                member.LastName = updatedLastName;
+
+                bool memberUpdated = MemberDal.Update(member);
+                return memberUpdated;
+            }
+
+            //toch mislukt? return false
+            return false;
         }
     }
 }
