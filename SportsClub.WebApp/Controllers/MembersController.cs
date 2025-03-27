@@ -120,5 +120,23 @@ namespace SportsClub.WebApp.Controllers
                 return View("Error");
             }
         }
+
+        //Edit
+        //twee methodes nodig: de eerste maakt de link naar de view te doen werken.
+        //en eentje om de edit uit te voeren
+
+        public ActionResult Edit(int id)
+        {
+            try
+            {
+                Member m = MemberBll.ReadOne(id);
+                return View(m);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+                return View("Error");
+            }
+        }
     }
 }

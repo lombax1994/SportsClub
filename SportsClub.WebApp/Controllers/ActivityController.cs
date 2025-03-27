@@ -62,6 +62,36 @@ namespace SportsClub.WebApp.Controllers
 
                 return View();
         }
+
+        public ActionResult Delete(int id)
+        {
+            try
+            {
+                Activity a = ActivityBll.ReadOne(id);
+                return View(a);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+                return View("Error");
+            }
+        }
+
+        [HttpPost]
+        public ActionResult Delete(string id)
+        {
+            int activityId = Convert.ToInt32(id);
+            bool activityDeleted = ActivityBll.Delete(activityId);
+            if (activityDeleted)
+            {
+                TempData["Feedback"] = "Activity deleted";
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View("Error");
+            }
+        }
     }
 }
 

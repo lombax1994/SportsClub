@@ -47,5 +47,19 @@ namespace SportsClub.Bll
             }
             return false;
         }
+
+        public static bool Delete(int id)
+        {
+            try
+            {
+                Activity a = ActivityDal.ReadOne(id);
+                bool ActivityDeleted = ActivityDal.Delete(a);
+                return ActivityDeleted;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

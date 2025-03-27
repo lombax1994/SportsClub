@@ -255,10 +255,13 @@
     <Content Include="Views\Members\Create.cshtml" />
     <Content Include="Views\Activity\Create.cshtml" />
     <Content Include="Views\Members\Delete.cshtml" />
+    <Content Include="Views\Activity\Delete.cshtml" />
+    <Content Include="Views\Members\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Default\" />
+    <Folder Include="Views\Update\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
