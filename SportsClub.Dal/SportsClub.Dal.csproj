@@ -55,9 +55,9 @@
   <ItemGroup>
     <Compile Include="ActivityDal.cs" />
     <Compile Include="MemberDal.cs" />
-    <Compile Include="Migrations\202503201038007_test.cs" />
-    <Compile Include="Migrations\202503201038007_test.Designer.cs">
-      <DependentUpon>202503201038007_test.cs</DependentUpon>
+    <Compile Include="Migrations\202503280836190_MemberPicture.cs" />
+    <Compile Include="Migrations\202503280836190_MemberPicture.Designer.cs">
+      <DependentUpon>202503280836190_MemberPicture.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,8 +74,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202503201038007_test.resx">
-      <DependentUpon>202503201038007_test.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202503280836190_MemberPicture.resx">
+      <DependentUpon>202503280836190_MemberPicture.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -23,13 +23,17 @@ namespace SportsClub.Entities
         //dus voorzien we een List<Activity> property
         public List<Activity> Activities { get; set; }
 
+        public string Picture { get; set; }
+
         // constructor zonder MemberId --> deze zal automatisch ingevuld worden
-        public Member(string firstName, string lastName)
+        public Member(string firstName, string lastName, string picture)
         {
             FirstName = firstName;
             LastName = lastName;
             //lege lijst van activiteiten genereren
             Activities = new List<Activity>();
+            Picture = picture;
+
         }
 
         // lege constructor, dit is vereist voor de Seed() methode

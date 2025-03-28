@@ -1,4 +1,6 @@
-﻿namespace SportsClub.Dal.Migrations
+﻿using System.Runtime.InteropServices;
+
+namespace SportsClub.Dal.Migrations
 {
     using System;
     using System.Data.Entity;
@@ -27,9 +29,9 @@
             // het x => ... stukje is om te voorkomen dat er dubbele data telkens bij komt
             context.Members.AddOrUpdate(
                 x => new { x.FirstName, x.LastName },
-                new Member("Koenraad", "Pecceu"),
-                new Member("Sam", "Vaneeckhoutte"),
-                new Member("Mieke", "Lapeire")
+                new Member("Koenraad", "Pecceu", "unknown.jpg"),
+                new Member("Sam", "Vaneeckhoutte", "unknown.jpg"),
+                new Member("Mieke", "Lapeire", "unknown.jpg")
             );
 
             // een paar test activiteiten toevoegen aan de database

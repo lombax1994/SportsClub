@@ -1,6 +1,7 @@
 ﻿using SportsClub.Entities;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -56,10 +57,31 @@ namespace SportsClub.WebApp.Controllers
         //HttpPost --> Dit is de methode die aangesproken wordt wanneer het formulier
         //verstuurd wordt
         [HttpPost]
-        public ActionResult Create(string firstName, string lastName)
+        public ActionResult Create(string firstName, string lastName, HttpPostedFileBase picture)
         {   
-            
-                bool memberCreated = MemberBll.Create(firstName, lastName);
+                string pictureName = "unknown.jpg";
+                
+                //controleren of er een bestand geupload werd
+                if (picture != null)
+                {
+                    //controleren of file jpg/png is
+                    if (picture.ContentType == "image/jpeg" || picture.ContentType == "image/png")
+                    {
+                        //variabele aanmaken om pad op te slaan waar we foto willen bewaren
+                        //Server.MapPath zorgt ervoor dat we de juiste map vinden
+                        //ongeacht van welke computer er gebruikt wordt
+                        //het tilde teken verwijst naar onze WebApp folder
+                        string PathToSave = Server.MapPath("~/Content/images/memberpics/");
+                        //extensie van file er apart uit halen
+                        string extension = Path.GetExtension(picture.FileName);
+                        //nieuwe naam genereren voor de foto
+                        pictureName = Guid.NewGuid() + extension;
+                        //foto opslaan in de map
+                        picture.SaveAs(PathToSave + pictureName);
+                    }
+                }
+
+                bool memberCreated = MemberBll.Create(firstName, lastName, pictureName);
                 if (memberCreated)
                 {
                     //Feedback boodschop plaatsen in de Viewbag
@@ -131,6 +153,31 @@ namespace SportsClub.WebApp.Controllers
             {
                 Member m = MemberBll.ReadOne(id);
                 return View(m);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+                return View("Error");
+            }
+        }
+
+        [HttpPost]
+        public ActionResult Edit(int id, string firstName, string lastName)
+        {
+            try
+            {
+                bool memberUpdated= MemberBll.Update(id, firstName, lastName);
+
+                if (memberUpdated)
+                {
+                    TempData["Feedback"] = "Member updated";
+                }
+                else
+                {
+                    TempData["Feedback"] = "Member not updated";
+                }
+                //terugkeren naar de details pagina
+                return RedirectToAction("Details", new { id = id });
             }
             catch (Exception ex)
             {

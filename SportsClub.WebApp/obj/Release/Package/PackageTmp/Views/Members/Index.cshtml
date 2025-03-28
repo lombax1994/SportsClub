@@ -1,0 +1,44 @@
+﻿@model IEnumerable<SportsClub.Entities.Member>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p>@TempData["Feedback"]</p>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @* model met een kleine letter verwijst naar de Member class op zich *@
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th></th>
+    </tr>
+
+    @* Model (met hoofdletter) verwijst hier naar de lijst met members *@
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @* item verwijst naar één member uit de verzameling *@
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.MemberId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.MemberId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.MemberId })
+            </td>
+        </tr>
+    }
+
+</table>

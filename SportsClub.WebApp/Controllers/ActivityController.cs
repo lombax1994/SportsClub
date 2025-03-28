@@ -92,6 +92,36 @@ namespace SportsClub.WebApp.Controllers
                 return View("Error");
             }
         }
+
+        public ActionResult Edit(int id)
+        {
+            try
+            {
+                Activity a = ActivityBll.ReadOne(id);
+                return View(a);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+                return View("Error");
+            }
+        }
+
+        [HttpPost]
+        public ActionResult Edit(int activityId, string ActivityName, int MaxParticipants)
+        {
+            bool activityUpdated = ActivityBll.Update(activityId, ActivityName, MaxParticipants);
+            if (activityUpdated)
+            {
+                TempData["Feedback"] = "Activity updated";
+                return RedirectToAction("Details", new {id = activityId});
+            }
+            else
+            {
+                TempData["Feedback"] = "Activity not updated";
+                return View("Error");
+            }
+        }
     }
 }
 

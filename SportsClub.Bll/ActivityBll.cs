@@ -61,5 +61,28 @@ namespace SportsClub.Bll
                 return false;
             }
         }
+
+        public static bool Update(int activityId, string updatedActivityName, int updatedMaxParticipants)
+        {
+            try
+            {
+                Activity a = ActivityDal.ReadOne(activityId);
+                
+                updatedActivityName= updatedActivityName.Trim();
+                if(!string.IsNullOrEmpty(updatedActivityName) && updatedMaxParticipants != 0)
+                {
+                    a.Activityname = updatedActivityName;
+                    a.MaxParticipants = updatedMaxParticipants;
+
+                    bool activityUpdated = ActivityDal.Update(a);
+                    return activityUpdated;
+                }
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

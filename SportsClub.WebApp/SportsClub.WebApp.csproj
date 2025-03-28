@@ -202,6 +202,7 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\SportsClubLouis - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
@@ -257,9 +258,12 @@
     <Content Include="Views\Members\Delete.cshtml" />
     <Content Include="Views\Activity\Delete.cshtml" />
     <Content Include="Views\Members\Edit.cshtml" />
+    <Content Include="Views\Activity\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\activitypics\" />
+    <Folder Include="Content\images\memberpics\" />
     <Folder Include="Views\Default\" />
     <Folder Include="Views\Update\" />
   </ItemGroup>

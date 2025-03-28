@@ -40,7 +40,7 @@ namespace SportsClub.Bll
         //Create
         //hier moeten we parameters doorgeven die overeenstemmen met de properties
         //van de member class
-        public static bool Create(string firstName, string lastName)
+        public static bool Create(string firstName, string lastName, string picture)
         {
             //trimmen van de voornaam en achternaam
             firstName = firstName.Trim();
@@ -51,7 +51,7 @@ namespace SportsClub.Bll
             if (!string.IsNullOrEmpty(firstName) && !string.IsNullOrEmpty(lastName))
             {
 
-                Member member = new Member(firstName, lastName);
+                Member member = new Member(firstName, lastName, picture);
                 bool memberCreated = MemberDal.Create(member);
                 return memberCreated;
             }

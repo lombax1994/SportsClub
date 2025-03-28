@@ -106,5 +106,6 @@ namespace SportsClub.Dal
                     return false;
                 }
             }
+        }
     }
 }
