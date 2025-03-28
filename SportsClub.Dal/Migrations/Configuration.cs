@@ -37,8 +37,8 @@ namespace SportsClub.Dal.Migrations
             // een paar test activiteiten toevoegen aan de database
             context.Activities.AddOrUpdate(
                 x => x.Activityname,
-                new Activity("Voetbal", 30),
-                new Activity("Tennis", 15)
+                new Activity("Voetbal", 30, "unknown.png"),
+                new Activity("Tennis", 15, "unknown.png")
                 );
         }
     }

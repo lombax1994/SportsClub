@@ -22,11 +22,15 @@ namespace SportsClub.Entities
 
         public List<Member> Members { get; set; }
 
-        public Activity(string activityName, int maxParticipants)
+        public string Picture { get; set; }
+
+        public Activity(string activityName, int maxParticipants, string picture)
         {
             Activityname = activityName;
             MaxParticipants = maxParticipants;
             Members = new List<Member>();
+            Picture = picture;
+
         }
 
         // lege constructor voor de Seed() methode

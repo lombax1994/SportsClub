@@ -18,6 +18,9 @@
         <th>
             @Html.DisplayNameFor(model => model.MaxParticipants)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Picture)
+        </th>
         <th></th>
     </tr>
 
@@ -28,6 +31,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.MaxParticipants)
+        </td>
+        <td>
+            <img src="~/Content/images/activitypics/@item.Picture" alt="Picture of @item.Activityname" Style="width: 50px"/>
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ActivityId }) |

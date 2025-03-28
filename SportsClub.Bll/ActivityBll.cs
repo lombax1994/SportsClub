@@ -33,7 +33,7 @@ namespace SportsClub.Bll
             return activity;
         }
 
-        public static bool Create(string activityName, int maxParticipants)
+        public static bool Create(string activityName, int maxParticipants, string picture)
         {
             activityName = activityName.Trim();
 
@@ -41,7 +41,7 @@ namespace SportsClub.Bll
 
             if (!string.IsNullOrEmpty(activityName))
             {
-                Activity activity = new Activity(activityName, maxParticipants);
+                Activity activity = new Activity(activityName, maxParticipants, picture);
                 bool activityCreated = ActivityDal.Create(activity);
                 return activityCreated; 
             }

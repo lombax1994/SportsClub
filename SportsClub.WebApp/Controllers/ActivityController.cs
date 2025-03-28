@@ -1,6 +1,7 @@
 ﻿using SportsClub.Bll;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -48,9 +49,23 @@ namespace SportsClub.WebApp.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(string activityName, int maxParticipants)
+        public ActionResult Create(string activityName, int maxParticipants, HttpPostedFileBase picture)
         {
-            bool activityCreated = ActivityBll.Create(activityName, maxParticipants);
+            string pictureName = "unknown.png";
+
+            if (picture != null)
+            {
+                if (picture.ContentType == "image/jpeg" || picture.ContentType == "image/png")
+                {
+                    string pathToSave = Server.MapPath("~/Content/images/activitypics/");
+                    string pictureExtension = Path.GetExtension(picture.FileName);
+                    pictureName = Guid.NewGuid() + pictureExtension;
+                    picture.SaveAs(pathToSave + pictureName);
+
+                }
+            }
+            
+            bool activityCreated = ActivityBll.Create(activityName, maxParticipants, pictureName);
                 if (activityCreated)
                 {
                     ViewBag.Feedback = activityName + " created";
